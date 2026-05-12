@@ -5,21 +5,21 @@
 class Acloud < Formula
   desc "Official CLI for Aruba Cloud — manage cloud resources from the terminal"
   homepage "https://github.com/Arubacloud/acloud-cli"
-  version "0.1.7"
+  version "0.1.8"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Arubacloud/acloud-cli/releases/download/v0.1.7/acloud_0.1.7_darwin_amd64.tar.gz"
-      sha256 "8115bbb0eaadf7c489fb6a2ec5ecb1755f3e50b16b1b84a019c03f4a80f79298"
+      url "https://github.com/Arubacloud/acloud-cli/releases/download/v0.1.8/acloud_0.1.8_darwin_amd64.tar.gz"
+      sha256 "da301db999fa92f13f8a9e0dca5571b6e1abd51409bfd4e723b97b80a49567e8"
 
       define_method(:install) do
         bin.install "acloud"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Arubacloud/acloud-cli/releases/download/v0.1.7/acloud_0.1.7_darwin_arm64.tar.gz"
-      sha256 "ddd75305a2d3abda8af67a899c4020faa9e76997139291e7bf2ffeaab2a907e7"
+      url "https://github.com/Arubacloud/acloud-cli/releases/download/v0.1.8/acloud_0.1.8_darwin_arm64.tar.gz"
+      sha256 "007b0b398a64dc77eae8a42dfa9c3fe31c0a46ca14929d59b2cead6a708717bb"
 
       define_method(:install) do
         bin.install "acloud"
@@ -29,15 +29,15 @@ class Acloud < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Arubacloud/acloud-cli/releases/download/v0.1.7/acloud_0.1.7_linux_amd64.tar.gz"
-      sha256 "582f20bb897d4887280c248ec100511b97b6ab3f7c13c567945a5175dd3bc66c"
+      url "https://github.com/Arubacloud/acloud-cli/releases/download/v0.1.8/acloud_0.1.8_linux_amd64.tar.gz"
+      sha256 "e51bad4f37b66726b746085598e75be7615ea837f351901a4595a267438ff44c"
       define_method(:install) do
         bin.install "acloud"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Arubacloud/acloud-cli/releases/download/v0.1.7/acloud_0.1.7_linux_arm64.tar.gz"
-      sha256 "160f65fa89cc30a63833051e41cfa6a82d5f6ca1abd5d106e3c9c02ae4f5c299"
+      url "https://github.com/Arubacloud/acloud-cli/releases/download/v0.1.8/acloud_0.1.8_linux_arm64.tar.gz"
+      sha256 "f40225d9c3a98266c260fcba6dbb9c097e0e54f0ce9848262607ac57e036718b"
       define_method(:install) do
         bin.install "acloud"
       end
