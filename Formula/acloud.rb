@@ -11,7 +11,7 @@ class Acloud < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/Arubacloud/acloud-cli/releases/download/v0.1.6/acloud_0.1.6_darwin_amd64.tar.gz"
-      sha256 "4b0fc4ad015964ade773ceec32c7c586f71aa647e96d32210cf43542007758e6"
+      sha256 "87501e10417657c6593b51a306fc26b8713e623ca0a26d0c52e3eb63cdf17dac"
 
       define_method(:install) do
         bin.install "acloud"
@@ -19,7 +19,7 @@ class Acloud < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/Arubacloud/acloud-cli/releases/download/v0.1.6/acloud_0.1.6_darwin_arm64.tar.gz"
-      sha256 "b30cbb1e035a6b7fd3cd87dcddd76f8a0ff4d9280b5b39b4b60d3e62251a4ba8"
+      sha256 "80125b4ba9be610664b27dabec27f39896f6654cfc82767fefceab43387b932b"
 
       define_method(:install) do
         bin.install "acloud"
@@ -30,14 +30,14 @@ class Acloud < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/Arubacloud/acloud-cli/releases/download/v0.1.6/acloud_0.1.6_linux_amd64.tar.gz"
-      sha256 "9bd36a0b341b329b6a9aa9f51f3a6dd1d4be997da7b70a94243b219c3ea8e193"
+      sha256 "aeea82fd8d0721a5ce24b786ede84e8a25e93af6761e0b4c8b24ff9fb8d3078c"
       define_method(:install) do
         bin.install "acloud"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/Arubacloud/acloud-cli/releases/download/v0.1.6/acloud_0.1.6_linux_arm64.tar.gz"
-      sha256 "17f75d1970c625cfedc5cc8aefa709badbbb7cab1ce38df7226be6cf031c2b13"
+      sha256 "25e3a5cf5f5e2080ed53ab45e9db5de96181f10d1718974d9c8038de24f6bfff"
       define_method(:install) do
         bin.install "acloud"
       end
